@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio</title>
+
+  <!-- CSS do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Fontes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+
+<body>
+
+
+  <section class="banner-model-x ">
+    <nav id="mainNav" class="navbar navbar-expand-lg  fixed-top  ">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#">PEDRO SALDANHA</a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto ms-auto d-flex align-items-center gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre" data-target="sobre">Sobre mim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formacoes" data-target="formacoes">Formações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tech" data-target="tech">Tech Stack</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sect-projetos" data-target="sect-projetos">Experiência</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contato" data-target="contato">Contato</a>
+            </li>
+          </ul>
+          <div class="navbar-icons d-flex align-items-center gap-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="Brasil" width="26"
+              height="24" class="icon-brasil">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="section-2">
+      <div class="form-container hidden">
+        <div class="info-container">
+          <img src="/assets/image/logoPS.png" class="logo" alt="Símbolo">
+          <h2 class="info-h2-home ">Desenvolvedor Front End</h2>
+          <!-- <h2 class="teste-font ">Exagerar é erro; simplicidade é poder.</h2> -->
+          <div class="btn-container-1">
+            <a href="/assets/dowloads/Currículo-Pedro Saldanha.pdf" download>
+              <button id="curriculo" class="btn-cv">Baixar Currículo</button>
+            </a>
+            <button id="Contato" class="btn-contato" href="#contato" data-target="contato">Entrar em contato</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="sobre" class=" py-6 text-white  sobremim-bg">
+    <div class="container">
+      <div class="row justify-content-center text-center ">
+        <div class="col-lg-10 hidden mt-5">
+          <h2 class="display-4 fw-bold  mt-5" style="color: #9c9b9b;">Sobre mim</h2>
+          <p class="fs-5  text-secondary mx-auto" style="max-width: 800px;">
+            Desenvolvedor com foco em front-end e back-end, atuando nos últimos meses em projetos
+            práticos. Atualmente criando um aplicativo de finanças utilizando JavaScript, React, Java e SQL. Desenvolvi
+            a
+            reprodução da interface do site da Tesla com foco em responsividade e experiência do usuário. Participei de
+            um
+            projeto acadêmico em parceria com a empresa LetsSign, atuando na criação de interfaces com HTML, CSS,
+            JavaScript e Bootstrap, além da modelagem e implementação do banco de dados em SQL. Experiência anterior em
+            design, marketing e desenvolvimento de negócios. Boa comunicação, raciocínio lógico e facilidade para
+            resolver
+            problemas.</ </p> <div class="d-grid gap-3 d-sm-flex justify-content-center">
+            <button id="btn-formacoes" href="#sect-projetos" data-target="sect-projetos"
+              class="btn btn-xl btn-outline-info btn-sobremim-1">Ver Projetos</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section id="formacoes" class="horizontal-projects-section py-5 my-section">
+    <div class="container hidden">
+      <div class="row gy-4" style="margin-top: 4%; margin-bottom: 7%;">
+        <h2 class="h2-big mt-1">Formações & Certificados</h2>
+
+        <div class="col-6 back-formacao">
+          <div class="d-flex flex-column flex-md-row align-items-center p-4  rounded-4 shadow project-card">
+            <img src="/assets/image/unnamed.png" alt="Projeto 1" class="project-thumb me-md-4 mb-3 mb-md-0" ">
+            <div class=" text-white">
+            <h3 class="mb-2">FIAP</h3>
+            <p class="mb-1"><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+            <p class="mb-3"><strong>Ínicio:</strong> 2024 <strong> -- </strong><strong>Final:</strong> 2026</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 back-formacao">
+        <div class="d-flex flex-column flex-md-row align-items-center p-4 rounded-4 shadow project-card">
+          <img src="/assets/image/images.png" alt="Projeto 2" class="img-fluid rounded me-md-4 mb-3 mb-md-0"
+            style="max-width: 100px;">
+          <div class="text-white">
+            <h3 class="mb-2">Harvard X</h3>
+            <p class="mb-1"><strong>Curso:</strong> Program Python and JavaScript</p>
+            <p class="mb-3"><strong>Ínicio:</strong> 2024<strong> -- </strong><strong>Final:</strong> 2025.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 back-formacao">
+        <div class="d-flex flex-column flex-md-row align-items-center p-4 rounded-4 shadow project-card">
+          <img src="/assets/image/images.jpeg" alt="Projeto 2"
+            class="img-fluid rounded me-md-4 mb-3 mb-md-0 class-alura" style="max-width: 100px;">
+          <div class="text-white">
+            <h3 class="mb-2">Alura</h3>
+            <p class="mb-1"><strong>Curso:</strong>Ux/Ui</p>
+            <p class="mb-3"><strong>Ínicio:</strong>2024<strong> -- :</strong> <strong>Final:</strong>2025</p>
+          </div>
+
+
+        </div>
+      </div>
+  </section>
+
+
+
+  <section class="tech-section text-white tech-bg ">
+    <div class="container">
+      <div class="row g-4 hidden">
+        <h2 class="h2-big-black">Tech Stack</h2>
+
+
+        <div id="tech" class="col-12 col-md-6 hidden">
+          <div class="tech-area  rounded-4 h-100 " style="padding: 60px 20px;">
+            <h4 class="mb-4 text-center title-tech">Front-End</h4>
+            <div class="d-flex flex-wrap gap-3 justify-content-center">
+
+              <div class="tech-card d-flex align-items-center gap-2"
+                style="width:140px;background-color: black; color: #ffffff;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+                  class="tech-icon" width="40" height="40">
+                <p class="mb-0" p-tech-black>HTML</p>
+              </div>
+
+              <div class="tech-card d-flex align-items-center gap-2 "
+                style="width:130px; background-color: black; color: #ffffff;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                  class="tech-icon" width="40" height="40">
+                <p class="mb-0">CSS</p>
+              </div>
+
+              <div class="tech-card d-flex align-items-center gap-2"
+                style="width:180px; background-color: black; color: #ffffff;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript" class="tech-icon" width="40" height="40">
+                <p class="mb-0">JavaScript</p>
+              </div>
+
+              <div class="tech-card d-flex align-items-center gap-2"
+                style="width:180px; background-color: black; color: #ffffff;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  alt="TypeScript" class="tech-icon" width="40" height="40">
+                <p class="mb-0">TypeScript</p>
+              </div>
+
+              <div class="tech-card d-flex align-items-center gap-2"
+                style="width:145px; background-color: black; color: #ffffff;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                  class="tech-icon" width="40" height="40">
+                <p class="mb-0">React</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-6">
+          <div class="tech-area p-4 rounded-4 h-100">
+            <h4 class=" title-tech mb-4 text-center  mt-5">Back-End</h4>
+            <div class="d-flex flex-wrap gap-3 justify-content-center">
+
+              <div class="tech-card d-flex align-items-center gap-2"
+                style="width:160px; background-color: black; color: #ffffff;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"
+                  class="tech-icon" width="40" height="40">
+                <p class="mb-0">Node.js</p>
+              </div>
+
+              <div class="tech-card d-flex align-items-center gap-2"
+                style="width:140px; background-color: black; color: #ffffff;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
+                  class="tech-icon" width="40" height="40">
+                <p class="mb-0">Java</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-6">
+          <div class="tech-area p-4 rounded-4 h-100 ">
+            <h4 class="mb-4 text-center title-tech">Banco de Dados</h4>
+            <div class="d-flex flex-wrap gap-3 justify-content-center">
+
+              <div class="tech-card d-flex align-items-center gap-2"
+                style="width:160px; background-color: black; color: #ffffff;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+                  class="tech-icon" width="40" height="40">
+                <p class="mb-0">MySQL</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-6">
+          <div class="tech-area p-4 rounded-4 h-100 ">
+            <h4 class="mb-4 text-center title-tech ">Design</h4>
+            <div class="d-flex flex-wrap gap-3 justify-content-center">
+
+              <div class="tech-card d-flex align-items-center gap-2"
+                style="width:155px; background-color: black; color: #ffffff;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"
+                  class="tech-icon" width="40" height="40">
+                <p class="mb-0">Figma</p>
+              </div>
+
+              <div class="tech-card d-flex align-items-center gap-2"
+                style="width:145px; background-color: black; color: #ffffff;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-original.svg" alt="UX/UI"
+                  class="tech-icon" width="40" height="40">
+                <p class="mb-0">UX/UI</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="sect-projetos">
+    <h2 class="h2-big-projetos hidden ">Projetos & Experiências</h2>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade  hidden ">
+      <div class="carousel-inner ">
+
+        <div id="sect-projetos" class="banner-tesla carousel-item active text-center text-white"
+          data-bs-target="#card-tesla">
+          <img src="/assets/image/Model-3-Performance_42.jpg" class="d-block  card-img" alt="Tesla Project">
+          <div class="carousel-caption">
+            <h1 class="h1-ex">Projeto Tesla</h1>
+            <p class="p-ex">Front-End</p>
+            <a href="https://github.com/PedroSaldanhaa/Telas-Home" class=" btn-ex btn btn-primary">Ver projeto</a>
+          </div>
+        </div>
+
+        <div class="banner-letsign carousel-item text-center text-white" data-bs-target="#card-letSign">
+          <img src="/assets/image/card-letSign.jpg" class="d-block  card-img" alt="Letsign Project">
+          <div class="carousel-caption">
+            <h1 class="h1-ex">Projeto Letsign</h1>
+            <p class="p-ex">Front-end & UX/UI</p>
+            <a href="https://github.com/PedroSaldanhaa/LetsSign-September-2024" class=" btn-ex btn btn-primary">Ver
+              projeto</a>
+          </div>
+        </div>
+
+        <div class=" banner-portfolio carousel-item text-center text-white" data-bs-target="#card-portfolio">
+          <img src="/assets/image/card-portfolio.jpg" class="d-block  card-img" alt="Portfólio  Project">
+          <div class="carousel-caption">
+            <h1 class="h1-ex">Portfólio</h1>
+            <p class="p-ex">Full-Stack & UX/UI</p>
+            <a href="#" class=" btn-ex btn btn-primary">Ver projeto</a>
+          </div>
+        </div>
+
+        <div class=" banner-gaia carousel-item text-center text-white" data-bs-target="#card-gaia">
+          <img src="/assets/image/card-gaia.jpg" class="d-block  card-img" alt="gaia Projetc">
+          <div class="carousel-caption">
+            <h1 class="h1-ex">Projeto Gaia</h1>
+            <p class="p-ex">Product Owner</p>
+            <a href="https://youtu.be/VN-xdxIFn9o?si=7SmQUc_wUOO8ynru" class="btn-ex btn btn-primary">Ver projeto</a>
+          </div>
+        </div>
+
+        <div class=" banner-financas carousel-item text-center text-white" data-bs-target="#card-finan">
+          <img src="/assets/image/Banner-finan.jpg" class="d-block  card-img" alt="Finanças+ Projetc">
+          <div class="carousel-caption">
+            <h1 class="h1-ex">Projeto Finanças+</h1>
+            <p class="p-ex">Full-Stack & UX/UI</p>
+            <a href="https://www.behance.net/gallery/234187629/Financas-" class="btn-ex btn btn-primary">Ver projeto</a>
+          </div>
+        </div>
+
+        <div class=" banner-financas carousel-item text-center text-white" data-bs-target="#card-zippy">
+          <img src="/assets/image/banner-zippy.jpg" class="d-block  card-img" alt="zippy Projetc">
+          <div class="carousel-caption">
+            <h1 class="h1-ex">Projeto ZippyGo</h1>
+            <p class="p-ex">Desenvolvedor Kotlin & UX/UI</p>
+            <a href="https://github.com/PedroSaldanhaa/ZippyGo-App/blob/main/README.md"
+              class="btn-ex btn btn-primary">Ver projeto</a>
+          </div>
+        </div>
+
+        <div class=" banner-financas carousel-item text-center text-white" data-bs-target="#card-limon">
+          <img src="/assets/image/banner-limon.jpg" class="d-block  card-img" alt="limon Projetc">
+          <div class="carousel-caption">
+            <h1 class="h1-ex">Projeto Trade Limon</h1>
+            <p class="p-ex">Full-Stack & UX/UI</p>
+            <a href="#" class="btn-ex btn btn-primary">Ver projeto</a>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </section>
+
+
+
+  <section id="contato" class="text-white py-4 pb-7 bg-form ">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <!-- Título do formulário -->
+      <h1 class="h1-form hidden">Contato</h1>
+      <div class="title-form mb-1 text-center w-100" style="max-width: 600px;">
+
+
+      </div>
+
+      <form id="meuFormulario" class="w-100 hidden" style="max-width:525px;">
+        <div class="formulario-email mb-4">
+          <input type="email" class="input-form-email form-control" id="email" name="email" placeholder="Email"
+            required>
+        </div>
+
+        <div class="formulario-email mb-4">
+          <input type="text" class="input-form-email form-control" id="assunto" name="assunto" placeholder="Assunto"
+            required>
+        </div>
+
+        <div class="formulario-email mb-5">
+          <textarea class="input-form-mensagem form-control pt-3" id="mensagem" name="mensagem" placeholder="Mensagem"
+            rows="4" required></textarea>
+        </div>
+        <div class="container-btn-form text-center">
+          <button class="btn-form btn btn-primary" type="submit">Enviar</button>
+        </div>
+      </form>
+
+
+
+      <div class="row  justify-content-center text-center gap-0 gap-md-4" style="margin-top: 13vh;">
+        <div class="col-6 col-md-auto mt-4 icon-contatos fs-5">
+          <a href="mailto:saldanhadoxxdev@gmail.com"
+            class="d-flex align-items-center justify-content-center text-decoration-none text-white" target="_blank">
+            <i class="bi bi-envelope-fill me-2 "></i>Email
+          </a>
+        </div>
+        <div class="col-6 col-md-auto mt-4 icon-contatos fs-5">
+          <a href="https://github.com/PedroSaldanhaa"
+            class="d-flex align-items-center justify-content-center text-decoration-none text-white" target="_blank">
+            <i class="bi bi-github me-2 "></i>GitHub
+          </a>
+        </div>
+        <div class="col-6 col-md-auto mt-4 icon-contatos fs-5">
+          <a href="https://www.behance.net/pedrodoxx/projects"
+            class="d-flex align-items-center justify-content-center text-decoration-none text-white" target="_blank">
+            <i class="bi bi-behance me-2 "></i>Behance
+          </a>
+        </div>
+        <div class="col-6 col-md-auto mt-4 icon-contatos fs-5">
+          <a href="https://www.linkedin.com/in/pedrodoxx/"
+            class="d-flex align-items-center justify-content-center text-decoration-none text-white" target="_blank">
+            <i class="bi bi-linkedin me-2"></i>LinkedIn
+          </a>
+        </div>
+      </div>
+  </section>
+
+
+
+  <section class="footer-bg">
+    <div class="footer-port">
+      <footer class="footer-tesla" style="color: rgb(118, 118, 118);">
+        <p> Este portfólio apresenta projetos com fins ilustrativos. As soluções podem incluir melhorias técnicas,
+          componentes personalizados e tecnologias atuais. Informações estão sujeitas a mudanças conforme evolução dos
+          projetos. Nem todas as ferramentas, abordagens ou entregas refletem o ambiente final de produção. Termos se
+          aplicam..</p>
+      </footer>
+
+
+      <div class="list-opition" style="color: rgb(147, 147, 147);">
+        <ul class="list-footer">
+          <li class="ul-footer">
+            <p>Pedro Saldanha dev © 2025</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="/assets/js/port.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

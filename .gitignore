@@ -1,0 +1,8 @@
+npm-debug.log*
+*.log
+/node_modules
+/nodeportfolio/.env
+/nodeportfolio/node_modules
+.DS_Store
+.vscode/
+
