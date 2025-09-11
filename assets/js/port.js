@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       try {
-        const response = await fetch('http://localhost:3000/send-email', {
+        const response = await fetch('https://portfolio-backend-pedro.onrender.com/send-email', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email, subject: assunto, message: mensagem }),
@@ -201,12 +201,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
 document.getElementById("curriculo").addEventListener("click", () => {
   const link = document.createElement("a");
-  link.href = ""; // caminho do arquivo
-  link.download = "meuArquivo.pdf"; // nome do arquivo salvo
-  link.click(); // simula clique para baixar
+  link.href = ""; 
+  link.download = "meuArquivo.pdf"; 
+  link.click(); 
 });
 
 
