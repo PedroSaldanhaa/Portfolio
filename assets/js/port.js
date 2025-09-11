@@ -201,12 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-document.getElementById("curriculo").addEventListener("click", () => {
-  const link = document.createElement("a");
-  link.href = ""; 
-  link.download = "meuArquivo.pdf"; 
-  link.click(); 
-});
 
 
 
