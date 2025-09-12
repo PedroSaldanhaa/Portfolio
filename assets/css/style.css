@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
 body,
@@ -46,6 +46,7 @@ html {
 }
 
 .navbar-brand {
+  display: flex;
   margin-left: 0vh;
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 10px;
@@ -57,7 +58,7 @@ html {
 
 .navbar.bg-body-tertiary,
 .navbar.navbar-expand-lg {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 .navbar .navbar-brand {
@@ -419,7 +420,6 @@ html {
 }
 
 .tech-area {
-
   margin-top: 0%;
   height: 100%;
   border-radius: 16px;
@@ -429,7 +429,6 @@ html {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   flex-direction: column;
-
 }
 
 .mini-card-tech {
@@ -574,6 +573,15 @@ html {
   background-color: #000000;
 }
 
+.carousel-item .card-img {
+  display: none !important;
+}
+
+
+.carousel-item .card-img-mobile {
+  display: block !important;
+}
+
 .carrossel-bg {
   background-size: cover;
   background-repeat: no-repeat;
@@ -602,6 +610,8 @@ html {
 
   color: white;
 }
+
+
 
 .h1-form {
   margin-top: 17vh;
@@ -775,12 +785,8 @@ html {
   border-radius: 20px;
 }
 
-.carousel-inner img {
-  width: 1100px;
-  height: 620px;
-  display: block;
-  margin: 0 auto;
-}
+
+
 
 .sect-projetos {
   background-color: rgb(0, 0, 0);
@@ -838,7 +844,8 @@ html {
     display: none;
   }
 
-  .nav-link,.icon-brasil{
+  .nav-link,
+  .icon-brasil {
     display: none;
   }
 
@@ -916,6 +923,7 @@ html {
 
   .navbar-brand {
     margin-left: 30%;
+
   }
 
 }
@@ -925,12 +933,24 @@ html {
   overflow: hidden;
 }
 
+
 .card-img {
-  width: 120%;
-  height: auto;
+  width: 1100px;
+  height: 620px;
   object-fit: cover;
   object-position: center;
-  margin-left: -10%;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+
+.card-img-mobile {
+  width: 350px;
+  height: 650px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  margin: 0 auto;
 }
 
 
@@ -949,6 +969,13 @@ html {
     font-size: 1.4rem;
   }
 
+  .carousel-item .card-img {
+    display: block !important;
+  }
+
+  .carousel-item .card-img-mobile {
+    display: none !important;
+  }
 }
 
 
@@ -1080,10 +1107,9 @@ html {
   .carousel,
   .carousel-inner,
   .carousel-item {
-    width: 100%;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+
   }
 
   .card-img {
@@ -1094,10 +1120,11 @@ html {
   }
 
   .carousel-caption {
+    margin-top: 3vh;
     width: 100%;
     left: 0;
     right: 0;
-    padding: 10px;
+    padding: 1px;
     text-align: center;
   }
 
@@ -1116,18 +1143,18 @@ html {
   }
 
   .logo {
-    display: block;  
-    height: auto;      
+    display: block;
+    height: auto;
     margin-left: auto;
     margin-right: 10%;
-    width: 85%;       
-    max-width: 550px;  
+    width: 85%;
+    max-width: 550px;
   }
 
   .info-container {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 17vh;
+    margin-top: 13vh;
     align-items: center;
     text-align: center;
   }
@@ -1135,14 +1162,14 @@ html {
   .btn-contato {
     font-weight: 400;
     font-size: 1rem;
-    padding: 5px 10px;
+    padding: 7px 15px;
     border-radius: 30px;
   }
 
   .btn-cv {
     font-size: 1rem;
     font-weight: 400;
-    padding: 10px 20px;
+    padding: 7px 15px;
     border-radius: 30px;
   }
 
@@ -1151,13 +1178,40 @@ html {
   }
 
   .navbar-brand {
-    margin-left: 11%;
+
+    left: 8.5%;
+    transform: translateX(3%);
   }
 
   .banner-model-x {
     max-width: 100%;
-    height: 60vh;
-  
+    height: 80vh;
+
+  }
+
+  .h1-ex {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .p-ex {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #mainNav {
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
 
 }
