@@ -199,15 +199,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-
-
-
-
-
-
-
-  
-
-
-
-

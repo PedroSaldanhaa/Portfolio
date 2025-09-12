@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body,
@@ -210,8 +211,6 @@ html {
   cursor: pointer;
 }
 
-
-
 .btn-primary {
   background-color: #3770cc;
   color: white;
@@ -232,7 +231,7 @@ html {
 
 @media (max-width: 576px) {
   .info-h2-home {
-    font-size: 50px;
+    font-size: 1.5rem;
   }
 
   .teste-font {
@@ -824,9 +823,9 @@ html {
 
 
 
-@media (max-width: 768px) {
+@media (min-width: 650px) and (max-width: 1300px) {
   .h2-big {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .h2-big-projetos {
@@ -839,11 +838,15 @@ html {
     display: none;
   }
 
+  .nav-link,.icon-brasil{
+    display: none;
+  }
+
   .sect-projetos,
   .carousel,
   .carousel-inner,
   .carousel-item {
-    width: 100vw;
+    width: 100%;
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -880,17 +883,39 @@ html {
 
   .logo {
     display: flex;
-    width: 470px;
-    margin-right: 6.5%;
+    width: 865px;
+    margin-right: 8%;
     height: auto;
   }
 
   .info-container {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 13vh;
+    margin-top: 2vh;
     align-items: center;
     text-align: center;
+  }
+
+  .btn-contato {
+    font-weight: 400;
+    font-size: 1.7rem;
+    padding: 10px 40px;
+    border-radius: 30px;
+  }
+
+  .btn-cv {
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 10px 40px;
+    border-radius: 30px;
+  }
+
+  .info-h2-home {
+    font-size: 3.4rem;
+  }
+
+  .navbar-brand {
+    margin-left: 30%;
   }
 
 }
@@ -909,6 +934,7 @@ html {
 }
 
 
+
 @media (min-width: 992px) {
   section.sect-projetos .carousel-item .carousel-caption {
     left: 11%;
@@ -924,6 +950,7 @@ html {
   }
 
 }
+
 
 
 @media (min-width: 1500px) and (max-width: 1899px) {
@@ -978,8 +1005,9 @@ html {
     align-items: center;
     text-align: center;
   }
-
 }
+
+
 
 @media (min-width: 1900px) {
   section.sect-projetos .carousel-item .carousel-caption {
@@ -1029,4 +1057,107 @@ html {
     align-items: center;
     text-align: center;
   }
+}
+
+
+
+@media (max-width: 650px) {
+  .h2-big {
+    font-size: 4rem;
+  }
+
+  .h2-big-projetos {
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .sect-projetos,
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .card-img {
+    width: 120vw;
+    height: auto;
+    object-fit: cover;
+    margin-left: -10vw;
+  }
+
+  .carousel-caption {
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .carousel-control-prev {
+    left: 2px;
+  }
+
+  .carousel-control-next {
+    right: 2px;
+  }
+
+  .card-img {
+    width: 150%;
+    object-position: right center;
+    margin-left: -50px;
+  }
+
+  .logo {
+    display: block;  
+    height: auto;      
+    margin-left: auto;
+    margin-right: 10%;
+    width: 85%;       
+    max-width: 550px;  
+  }
+
+  .info-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17vh;
+    align-items: center;
+    text-align: center;
+  }
+
+  .btn-contato {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 30px;
+  }
+
+  .btn-cv {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+
+  .btn-container-1 {
+    margin-top: 1vh;
+  }
+
+  .navbar-brand {
+    margin-left: 11%;
+  }
+
+  .banner-model-x {
+    max-width: 100%;
+    height: 60vh;
+  
+  }
+
 }
