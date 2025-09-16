@@ -737,21 +737,6 @@ html {
 
 
 
-@media (max-width: 576px) {
-  .text-movel {
-    display: none;
-  }
-
-  .teste-font {
-    font-size: 2rem;
-  }
-
-  .h6-projetos {
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 .text-secondary {
   padding-bottom: 4vh;
 }
@@ -784,9 +769,6 @@ html {
 .card-img {
   border-radius: 20px;
 }
-
-
-
 
 .sect-projetos {
   background-color: rgb(0, 0, 0);
@@ -827,7 +809,153 @@ html {
   right: -50px;
 }
 
+@media (max-width: 576px) {
+  .text-movel {
+    display: none;
+  }
 
+  .teste-font {
+    font-size: 2rem;
+  }
+
+}
+
+
+
+
+@media (max-width: 650px) {
+  .h2-big {
+    font-size: 4rem;
+  }
+
+  .h2-big-projetos {
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .sect-projetos,
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .card-img {
+    width: 120vw;
+    height: auto;
+    object-fit: cover;
+    margin-left: -10vw;
+  }
+
+  .carousel-caption {
+    margin-top: 3vh;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 1px;
+    text-align: center;
+  }
+
+  .carousel-control-prev {
+    left: 2px;
+  }
+
+  .carousel-control-next {
+    right: 2px;
+  }
+
+  .card-img {
+    width: 150%;
+    object-position: right center;
+    margin-left: -50px;
+  }
+
+  .logo {
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: 10%;
+    width: 85%;
+    max-width: 550px;
+  }
+
+  .info-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23vh;
+    align-items: center;
+    text-align: center;
+  }
+
+  .btn-contato {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 7px 15px;
+    border-radius: 30px;
+  }
+
+  .btn-cv {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 7px 15px;
+    border-radius: 30px;
+  }
+
+  .btn-container-1 {
+    margin-top: 1vh;
+  }
+
+  .navbar-brand {
+
+    left: 8.5%;
+    transform: translateX(3%);
+  }
+
+  .banner-model-x {
+    max-width: 100%;
+    height: 80vh;
+
+  }
+
+  .h1-ex {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .p-ex {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .navbar {
+    position: fixed;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #mainNav {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  #mainNav.scrolled {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background-color: rgba(20, 20, 20, 0.8);
+  }
+
+}
 
 @media (min-width: 650px) and (max-width: 1300px) {
   .h2-big {
@@ -923,10 +1051,16 @@ html {
 
   .navbar-brand {
     margin-left: 30%;
+  }
 
+  #mainNav.scrolled {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background-color: rgba(20, 20, 20, 0.8);
   }
 
 }
+
 
 .carousel-item {
   position: relative;
@@ -1084,134 +1218,4 @@ html {
     align-items: center;
     text-align: center;
   }
-}
-
-
-
-@media (max-width: 650px) {
-  .h2-big {
-    font-size: 4rem;
-  }
-
-  .h2-big-projetos {
-    font-size: 50px;
-    text-align: center;
-    align-items: center;
-  }
-
-  .navbar-toggler {
-    display: none;
-  }
-
-  .sect-projetos,
-  .carousel,
-  .carousel-inner,
-  .carousel-item {
-    padding: 0;
-    margin: 0;
-
-  }
-
-  .card-img {
-    width: 120vw;
-    height: auto;
-    object-fit: cover;
-    margin-left: -10vw;
-  }
-
-  .carousel-caption {
-    margin-top: 3vh;
-    width: 100%;
-    left: 0;
-    right: 0;
-    padding: 1px;
-    text-align: center;
-  }
-
-  .carousel-control-prev {
-    left: 2px;
-  }
-
-  .carousel-control-next {
-    right: 2px;
-  }
-
-  .card-img {
-    width: 150%;
-    object-position: right center;
-    margin-left: -50px;
-  }
-
-  .logo {
-    display: block;
-    height: auto;
-    margin-left: auto;
-    margin-right: 10%;
-    width: 85%;
-    max-width: 550px;
-  }
-
-  .info-container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 13vh;
-    align-items: center;
-    text-align: center;
-  }
-
-  .btn-contato {
-    font-weight: 400;
-    font-size: 1rem;
-    padding: 7px 15px;
-    border-radius: 30px;
-  }
-
-  .btn-cv {
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 7px 15px;
-    border-radius: 30px;
-  }
-
-  .btn-container-1 {
-    margin-top: 1vh;
-  }
-
-  .navbar-brand {
-
-    left: 8.5%;
-    transform: translateX(3%);
-  }
-
-  .banner-model-x {
-    max-width: 100%;
-    height: 80vh;
-
-  }
-
-  .h1-ex {
-    font-size: 30px;
-    font-weight: 700;
-  }
-
-  .p-ex {
-    font-size: 20px;
-    font-weight: 500;
-  }
-
-  .navbar {
-    position: relative;
-  }
-
-  .navbar-brand {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  #mainNav {
-    padding-top: 20px;
-    padding-bottom: 30px;
-  }
-
 }
