@@ -169,8 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
 
       const email = document.getElementById('email').value.trim();
-      const assunto = document.getElementById('assunto').value.trim();
-      const mensagem = document.getElementById('mensagem').value.trim();
+      const assunto = document.getElementById('subject').value.trim();
+      const mensagem = document.getElementById('message').value.trim();
 
       if (!email || !assunto || !mensagem) {
         alert('Por favor, preencha todos os campos.');
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const response = await fetch('https://portfolio-backend-pedro.onrender.com/send-email', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email, subject: assunto, message: mensagem }),
+          body: JSON.stringify({ email, subject, message }),
         });
 
         const data = await response.json();
